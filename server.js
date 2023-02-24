@@ -6,11 +6,7 @@ const cors = require("cors")
 
 connectDb();
 const app = express();
-app.use(cors({
-    origin: "*",
-    method: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-}))
+app.use(cors());
 
 const port = process.env.PORT || 5000;
 
