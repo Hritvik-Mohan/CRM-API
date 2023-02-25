@@ -13,8 +13,8 @@ const getCustomers = asyncHandler (async (req, res) => {
 //@access public
 const createCustomer = asyncHandler (async (req, res) => {
     console.log("The request body is: ", req.body);
-    const { name, website, ceo, status, employees, turnover, year } = req.body;
-    if (!name || !website || !ceo || !status || !employees || !turnover || !year) {
+    const { name, website, ceo, employees, turnover, year } = req.body;
+    if (!name || !website || !ceo || !employees || !turnover || !year) {
         res.status(400);
         throw new Error("All fields are mandatory !");
     }
@@ -22,7 +22,6 @@ const createCustomer = asyncHandler (async (req, res) => {
         name,
         website,
         ceo,
-        status,
         employees,
         turnover,
         year
