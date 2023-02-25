@@ -14,10 +14,10 @@ const customerSchema = mongoose.Schema(
       type: String,
       required: [true, "Please add the name of the ceo"],
     },
-    status: {
-      type: String,
-      required: [true, "Please add the status"],
-    },
+    // status: {
+    //   type: String,
+    //   required: [false, "Please add the status"],
+    // },
     employees: {
       type: String,
       required: [true, "Please add the number employees"],
