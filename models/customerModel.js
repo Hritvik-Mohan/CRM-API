@@ -5,7 +5,11 @@ const customerSchema = mongoose.Schema(
     name: {
       type: String,
       required: [true, "Please add the company's name"],
-    },
+    }, 
+    website: {
+      type: String,
+      required: [true, "Please add the company's website"]
+    } ,
     ceo: {
       type: String,
       required: [true, "Please add the name of the ceo"],
